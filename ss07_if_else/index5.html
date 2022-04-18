@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td colspan="4">
+            <p id="result"></p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="calBasic('1')">1</button>
+        </td>
+        <td>
+            <button onclick="calBasic('2')">2</button>
+        </td>
+        <td>
+            <button onclick="calBasic('+')">+</button>
+        </td>
+        <td>
+            <button onclick="calBasic('=')">=</button>
+        </td>
+    </tr>
+
+</table>
+<script>
+    function calBasic(x) {
+        let value = document.getElementById("result").innerText; //lấy giá trị hiện tại
+        switch (x) {
+            case "1":
+            case "2":
+            case "+":
+                value = value + x; //nối chuỗi
+                break;
+            case "=":
+                value = eval(value);
+                break
+        }
+        document.getElementById("result").innerText = value; //cập nhật giá trị mới
+    }
+</script>
+</body>
+</html>

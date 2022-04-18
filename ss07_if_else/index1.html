@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Nếu điểm số nhập vào >= 75
+    *  - tỉ lệ vắng nghỉ < 10% thì pass
+    *  - tỉ lệ vắng nghỉ >=10 thì sẽ đi nói chyện với coach
+    * Ngược lại thì fail*/
+    let point = parseInt(prompt("nhap diem: "));
+    let absent = parseInt(prompt("nhap % vang nghi: "))
+
+    /*If lồng nhau*/
+    if (point >= 75) {
+        if(absent < 10){
+            alert("Pass");
+        } else {
+            alert("Consider with coach..")
+        }
+    } else {
+        alert("Fail");
+    }
+</script>
+</body>
+</html>

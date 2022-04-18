@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*Viết chương trình xếp loại học viên.
+        * nhập điểm trung bình.
+        * Nếu dtb >= 9 thông báo xuất sắc
+        * 7 <= dtb < 9 thông báo tốt
+        * 6 <= dtb < 7 thông báo trung bình.
+        * <6 yếu*/
+
+        let average = prompt("input average: ");
+        /*if bậc thang*/
+        if(average >= 9) {
+            document.write("Excellent.");
+        } else if (average >= 7){
+            document.write("Good.")
+        } else if (average >= 6){
+            document.write("Average.")
+        } else {
+            document.write("Blow.")
+        }
+    </script>
+</body>
+</html>
