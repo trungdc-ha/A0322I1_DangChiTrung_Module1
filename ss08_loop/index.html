@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Hiển thị ra màn hình
+    các số nguyên từ 1 --> 10*/
+    // document.write(1 + "<br>");
+    // document.write(2 + "<br>");
+    // document.write(3 + "<br>");
+    // document.write(10 + "<br>");
+
+    // for(let i = 1; i <= 10; i++){
+    //     document.write(i + "<br>");
+    // }
+
+    // let i = 1;
+    // for (; i <= 10;) {
+    //     document.write(i + "<br>");
+    //     i++;
+    // }
+    /*
+    * Hiển thị bản cữu chương 2
+    * */
+    // for (let i = 1; i <= 10; i++) {
+    //     document.write("2 x " + i + " = " + 2 * i + "<br>");
+    // }
+
+    /*
+    * Cho một số tự nhiên x
+    * kiểm tra x lớn hơn > 0 thì bắt nhập lại x (nhỏ hơn giá trị ban đầu)
+    * kiểm tra x bé hơn < 0 thì bắt nhập lại x (lớn hơn giá trị ban đầu)
+    * Cho đến khi nhập x = 0 thì dừng
+    * */
+    let x = 5; //-10 18 5 0
+    while (x!=0){ //trong khi x khác 0 thì làm ...
+        if(x > 0){
+            x = parseInt(prompt("Nhap so x be hon : "+x));
+        } else {
+            // x < 0
+            x = parseInt(prompt("Nhap so x lơn hon : "+x));
+        }
+    }
+
+    /*
+    * Viết chương trình nhập kí tự từ bàn phím
+    * Sau đó hiển thị kí tự đó ra màn hình.
+    * Nếu nhập x thì dừng.
+    * */
+    // let input;
+    // do {
+    //     input = prompt("input character:");
+    //     alert(input);
+    // } while ("x" != input);
+
+
+    /*
+    * Mẹ cho A 10 đồng đi chợ.
+    * Mô phỏng lại quá trình đi chợ mua hàng của A
+    * Điều kiện: A chỉ được mua hàng khi còn tiền.
+    * // Xác định vấn đề cần lặp là gì
+    * // Lặp bao nhiêu lần
+    * // Xác định điều kiện lặp.
+    * */
+
+    let money = 10;
+    while (money > 0){
+        let product = prompt("A muốn mua gì ?");
+        let price = parseInt(prompt("Nhập giá sản phẩm: "));
+        if(money >= price){
+            money = money - price;
+            document.write("A đã mua được: " + product +
+                " với giá là : " + price + "<br>");
+        }
+    }
+
+</script>
+</body>
+</html>
