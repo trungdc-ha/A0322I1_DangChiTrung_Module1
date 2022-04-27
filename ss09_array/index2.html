@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = ["a","b","c","d"];
+        // document.write(arr[0] + "<br>"); //a
+        // document.write(arr[1] + "<br>"); //b
+        // document.write(arr[2] + "<br>"); //c
+        // document.write(arr[3] + "<br>"); //d
+
+        for(let index = 0; index < arr.length; index++){
+            document.write(arr[index] + "<br>")
+        }
+
+        /*for-in: duyệt index*/
+        for(let index in arr){
+            document.write(index + "<br>")
+        }
+        //
+        /*for-of: duyệt value*/
+        for(let value of arr){
+            document.write(value + "<br>")
+        }
+
+    </script>
+</body>
+</html>

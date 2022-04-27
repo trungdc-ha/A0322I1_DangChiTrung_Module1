@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        // let number = [1,2,3,4];
+        // // document.write(number.indexOf(2)); //trả về index
+        // document.write(number.includes(22)); //trả về boolean
+
+        let eng = ["hello", "good"];
+        let vn = ["xin chao", "tot"];
+
+        let input = prompt("input keyword:");
+        let index = eng.indexOf(input);
+        if(index != -1){
+            document.write(vn[index]);
+        } else {
+            document.write("Not found!..")
+        }
+
+    </script>
+</body>
+</html>
