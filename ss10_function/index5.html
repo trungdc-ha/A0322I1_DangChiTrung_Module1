@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let x = 10; /*Biến toàn cục*/
+    function increase(x) { /*Tham so la bien cuc bo*/
+        // let x = 5; /*Biến cục bộ*/
+        // var a = 5; /*Biến cục bộ*/
+        console.log(x); //
+        x++;
+    }
+
+    increase(x);
+    console.log(x); //
+    // console.log(a); //Error
+
+    let array = [1, 3, 2];
+    array.sort((a, b) => {
+        return a - b
+    })
+    array.sort(function (a, b) {
+        return a - b;
+    })
+</script>
+</body>
+</html>
