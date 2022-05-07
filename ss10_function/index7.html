@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeValue(funcNum) {
+        funcNum[0] = 1;
+    }
+    let num = [11];
+    changeValue(num);/*copy địa chỉ --> truyền vào hàm*/
+    console.log(num[0]); //1
+</script>
+</body>
+</html>
