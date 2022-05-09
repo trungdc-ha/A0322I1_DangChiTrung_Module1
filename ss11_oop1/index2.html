@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Pin{
+        constructor(dungLuong, hangSX) {
+            this.dungLuong = dungLuong;
+            this.hangSX = hangSX;
+        }
+
+        getDungLuong(){
+            return this.dungLuong;
+        }
+    }
+    /*B1 tạo class bằng từ khóa class*/
+    class DienThoai {
+        constructor(ten, hangSX, ungDung) {
+            this.ten = ten;
+            this.hangSX = hangSX;
+            this.ungDung = ungDung;
+        }
+
+        goiDien() {
+            document.write(this.ten + " dang goi dien " + "<br>");
+        }
+
+        /*Setter - cap nhat thuoc tinh cua Object*/
+        setTen(tenMoi){
+            this.ten = tenMoi;
+        }
+
+        /*Getter - lay thong tin cua doi tuong*/
+        getTen(){
+            return this.ten;
+        }
+
+        getUngDung(){
+            return this.ungDung;
+        }
+
+        setPin(pinMoi){
+            this.pin = pinMoi;
+        }
+
+        kiemTra(){
+            if(this.pin.getDungLuong() > 10){
+                document.write("Dien thoai dang bat.")
+            } else {
+                document.write("Dien thoai HET pin.")
+            }
+        }
+    }
+
+    /*B2 tạo đối tượng*/
+    let myApp = ["face", "youtube", "sms"];
+    let iphone12 = new DienThoai("Iphone 12", "Apple");
+    // iphone12.ten = "Iphone 13"; //Cách 1 - cập nhật tên trực tiếp
+    // iphone12.setTen("Iphone 14"); //Cach 2 - cap nhat gian tiep qua setter
+    // iphone12.goiDien();
+    // document.write(iphone12.getTen() + "<br>");
+
+    let samsungs22 = new DienThoai("Samsung s22", "Samsung", myApp);
+    samsungs22.goiDien();
+    // document.write(samsungs22.getUngDung());
+    let myPin = new Pin(1,"LG");
+    samsungs22.setPin(myPin);
+    samsungs22.kiemTra();
+</script>
+</body>
+</html>
